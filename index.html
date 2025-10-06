@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Character Counter</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <div class="container">
+    <header class="main_header">
+      <div class="header_title"><h4>Character Counter</h4></div>
+      <div class="dark_light_mode" id="theme-toggle">Theme</div>
+    </header>
+
+    <div class="title">
+      <h1>Analyze your text</h1>
+      <h1>in real-time.</h1>
+    </div>
+
+    <main>
+      <textarea id="text-input" placeholder="Start typing here..."></textarea>
+      <div class="main1">
+        <div>
+          <label><input type="checkbox" id="exclude-spaces"> Remove Spaces</label>
+          <label><input type="checkbox" id="set-limit"> Search Character Limit</label>
+        </div>
+        <p class="reading-time">Reading time: <span id="reading-time">0</span> min</p>
+      </div>
+    </main>
+
+    <section class="section1">
+      <div class="counter-box box-1"><span id="total-characters">0</span><p>Total Characters</p></div>
+      <div class="counter-box box-2"><span id="word-count">0</span><p>Word Count</p></div>
+      <div class="counter-box box-3"><span id="sentence-count">0</span><p>Sentence Count</p></div>
+    </section>
+
+    <div class="letter-density">
+      <h5>Letter Density</h5>
+      <div id="letter-density-content"><p>No characters yet.</p></div>
+      <button id="see-more-btn">See More</button>
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
